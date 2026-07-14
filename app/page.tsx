@@ -10,7 +10,6 @@ export default function Home() {
           alt="Next.js logo"
           width={100}
           height={20}
-          priority
         />
         <span className="box-decoration-slice bg-linear-to-r from-indigo-600 to-pink-500 px-2 text-white">
           Hello<br/>World
