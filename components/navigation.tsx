@@ -1,5 +1,6 @@
 import { navItems } from "@/lib/constants";
 import Link from "next/link";
+import ThemeToggle from "./theme-toggle";
 
 export default function Navigation() {
     return <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b 
@@ -13,10 +14,14 @@ export default function Navigation() {
                     </h1>
                 </div>
                 {/*Desktop Navigation*/}
-                <div>
+                <div className="hidden md:flex items-center space-x-8">
                     {navItems.map(item => (
-                        <Link key={item.name} href={item.href}>{item.name}</Link>
+                        <Link key={item.name} href={item.href} className="text-sm font-medium text-muted-foreground
+                        hover:text-foreground transition-colors duration-200">
+                            {item.name}</Link>
                     ))}
+
+                    <ThemeToggle/>
                 </div>
             </div>
         </div>
