@@ -31,6 +31,13 @@ export default function HeroSection() {
                         </Button>
                      </motion.div>
                 </motion.div>
+                {/*Right Content*/}
+                <motion.div>
+                <div className="relative">
+                    <div className="w-80 h-80 bg-linear-to-br from-primary/20 to-secondary/20
+                    rounded-full blur-3xl absolute -top-10 -right-10"></div>
+                </div>
+                </motion.div>
             </div>
         </div>
     </section>
