@@ -10,7 +10,7 @@ export default function Navigation() {
                 {/*logo*/}
                 <div className="shrink-0">
                     <h1 className="text-xl font-serif font-bold text-foreground">
-                        Resonance
+                        Ethereal
                     </h1>
                 </div>
                 {/*Desktop Navigation*/}

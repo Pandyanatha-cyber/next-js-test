@@ -15,18 +15,18 @@ export default function HeroSection() {
                 transition={{duration: 0.8}}
                 className="text-center lg:text-left"
                 >
-                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-foreground
+                     <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif font-bold text-foreground
                      leading-tight mb-6">
-                        Writing That <span className="text-primary italic">Resonates</span>
+                        I am <span className="text-primary italic">Atomic</span>
                      </h1>
 
                      <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl">
-                        I am too lazy to copy and paste the text
+                        hiidoi naa.. hito no kokoro toka nainka?
                      </p>
 
                      <motion.div initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.8, delay: 0.2}}>
                         <Button size='lg' className='group'>
-                        Read the lastest post{" "}
+                        This button does not work {" "}
                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"/>
                         </Button>
                      </motion.div>
