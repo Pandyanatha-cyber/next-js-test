@@ -2,7 +2,7 @@ import { featuredPosts } from "@/lib/data"
 import * as motion from "motion/react-client"
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight, Calendar, Sparkles, User, User2Icon } from "lucide-react";
 
 export default function FeaturedSection() {
     const posts = featuredPosts;
@@ -51,8 +51,8 @@ export default function FeaturedSection() {
 
                             <CardContent className="p-6">
                                 <div className="flex items-center text-sm text-muted-foreground mb-3">
-                                    <Calendar className="h-4 w-4 mr-2"/>
-                                    {post.date}
+                                    <User className="h-4 w-4 mr-2" />
+                                    {post.user}
                                 </div>
                                 <h3 className="text-xl font-serif font-bold text-foreground mb-3 
                                 group-hover:text-primary transition-colors duration-300">

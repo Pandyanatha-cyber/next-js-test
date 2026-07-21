@@ -5,7 +5,7 @@ export const featuredPosts = [
         excerpt: 
         "Unlimited Void traps the target inside the Limitless. Once inside, the domain floods them with endless information, rendering them immobile.",
         category: "Technique",
-        date: "Dec 21, 2089",
+        user: "Gojo Satoru",
         image: 
         "images/gojo.png",
     },
@@ -15,7 +15,7 @@ export const featuredPosts = [
         excerpt: 
         "Malevolent Shrine hits anything within its effective range relentlessly with slashing attacks. Sukuna can customize the range of his technique up to 200 meters.",
         category: "Technique",
-        date: "Sep 29, 2089",
+        user: "Ryomen Sukuna",
         image: 
         "images/sukuna.png",
     },
@@ -25,7 +25,7 @@ export const featuredPosts = [
         excerpt: 
         "Deadly Sentencing is a court-themed domain that puts Higuruma's target on trial. All violence is prohibited and proceedings are overseen by his shikigami Judgeman. Trials that end in a guilty verdict result in sentencing from Judgeman.",
         category: "Technique",
-        date: "Feb 16, 2089",
+        user: "Hiromi Higuruma",
         image: 
         "images/higuruma.png",
     },
@@ -35,7 +35,7 @@ export const featuredPosts = [
         excerpt: 
         "Chimera Shadow Garden in its incomplete form allows Megumi to fill an area with thick fluid shadows and summon countless shikigami from them, as well as utilize advanced manipulation of his shadows.",
         category: "Technique",
-        date: "Dec 21, 2089",
+        user: "Megumi Fushigoro",
         image: 
         "images/megumi.png",
     },
@@ -45,7 +45,7 @@ export const featuredPosts = [
         excerpt: 
         "Horizon of the Captivating Skandha is a beach-like domain that allows Dagon to summon countless fish-like shikigami that bite into his targets without miss.",
         category: "Technique",
-        date: "Dec 21, 2089",
+        user: "Dagon",
         image: 
         "images/dagon.png",
     },
@@ -55,7 +55,7 @@ export const featuredPosts = [
         excerpt: 
         "Coffin of the Iron Mountain traps the target inside a large volcano hot enough to combust normal sorcerers upon entering. In addition to his pyrokinesis, Jogo can control the earth within the volcano to attack as well.",
         category: "Technique",
-        date: "Dec 21, 2089",
+        user: "Jogo",
         image: 
         "images/jogo.png",
     },

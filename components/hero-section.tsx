@@ -2,7 +2,7 @@
 
 import * as motion from 'motion/react-client'
 import { Button } from './ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Zap } from 'lucide-react';
 
 export default function HeroSection() {
     return <section className="min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -17,6 +17,9 @@ export default function HeroSection() {
                 >
                      <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif font-bold text-foreground
                      leading-tight mb-6">
+                        <div >
+                        <Zap className='h-80 w-80'/>
+                        </div>
                         I am <span className="text-primary italic">Atomic</span>
                      </h1>
 
