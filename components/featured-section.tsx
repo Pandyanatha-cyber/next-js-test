@@ -2,7 +2,7 @@ import { featuredPosts } from "@/lib/data"
 import * as motion from "motion/react-client"
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { ArrowRight, Calendar, Sparkles, User, User2Icon } from "lucide-react";
+import { ArrowRight, Calendar, Sparkle, Sparkles, User, User2Icon } from "lucide-react";
 
 export default function FeaturedSection() {
     const posts = featuredPosts;
@@ -44,7 +44,10 @@ export default function FeaturedSection() {
                                     h-48 object-cover transition-transform duration-300 
                                     group-hover:scale-105"/>
                                     <div className="absolute top-4 left-4">
-                                        <Badge variant="secondary" className="bg-background/80 backdrop-blur-xs">{post.category}</Badge>
+                                        <Badge variant="secondary" className="bg-background/80 backdrop-blur-xs">
+                                        <Sparkle/>
+                                        {post.category}
+                                        </Badge>
                                     </div>
                                 </div>
                             </CardHeader>

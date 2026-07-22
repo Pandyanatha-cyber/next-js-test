@@ -2,7 +2,8 @@
 
 import * as motion from 'motion/react-client'
 import { Button } from './ui/button';
-import { ArrowRight, Zap } from 'lucide-react';
+import { ArrowRight, Radiation, SeparatorVertical, Sigma, Zap } from 'lucide-react';
+import { easeInOut } from 'motion';
 
 export default function HeroSection() {
     return <section className="min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -20,12 +21,13 @@ export default function HeroSection() {
                         <motion.div
                         initial={{opacity: 0, scale: 0.2}}
                         animate={{opacity: 1, scale: 1}}
-                        transition={{type: "spring", stiffness: 300, damping: 0}}
+                        transition={{type: "spring", stiffness: 200, damping: 10}}
                         >
                         <motion.div
-                        animate={{ opacity: [0.2, 0, 0.3, 1, 0.2] }}
-                        transition={{ repeat: Infinity, duration: 2 }}>
-                        <Zap className='absolute -top-12 -right-1 h-72 w-72 pointer-events-none text-indigo-500/30 blur-[1px]
+                        animate={{ opacity: [0.2, 0.5, 0, 0.3, 1, 0.2]}}
+                        transition={{ repeat: Infinity, duration: 2, ease: easeInOut}}
+                        >
+                        <Radiation className='absolute -top-12 -right-1 h-72 w-72 pointer-events-none text-indigo-500/30 blur-[1px]
                         rotate-35'/>
                         </motion.div>
                         </motion.div>
@@ -57,7 +59,13 @@ export default function HeroSection() {
                     <div className="w-80 h-80 bg-linear-to-br from-primary/20 to-secondary/20
                     rounded-full blur-3xl absolute -top-10 -right-10"></div>
                     <div className="w-96 h-96 bg-linear-to-tl from-secondary/30 to-primary/30
-                    rounded-2xl transform rotate-6 shadow-2xl"></div>
+                    rounded-2xl transform rotate-6 shadow-2xl overflow-hidden"
+                    style={{
+                        backgroundImage: "url('/images/profile-bunny.png')",
+                        backgroundRepeat: "repeat",
+                        backgroundSize: "64px 64px"
+                    }}>
+                    </div>
                 </div>
                 </motion.div>
             </div>
