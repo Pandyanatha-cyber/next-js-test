@@ -15,11 +15,20 @@ export default function HeroSection() {
                 transition={{duration: 0.8}}
                 className="text-center lg:text-left"
                 >
-                     <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif font-bold text-foreground
+                     <h1 className="relative text-4xl md:text-6xl lg:text-8xl font-serif font-bold text-foreground
                      leading-tight mb-6">
-                        <div >
-                        <Zap className='h-80 w-80'/>
-                        </div>
+                        <motion.div
+                        initial={{opacity: 0, scale: 0.2}}
+                        animate={{opacity: 1, scale: 1}}
+                        transition={{type: "spring", stiffness: 300, damping: 0}}
+                        >
+                        <motion.div
+                        animate={{ opacity: [0.2, 0, 0.3, 1, 0.2] }}
+                        transition={{ repeat: Infinity, duration: 2 }}>
+                        <Zap className='absolute -top-12 -right-1 h-72 w-72 pointer-events-none text-indigo-500/30 blur-[1px]
+                        rotate-35'/>
+                        </motion.div>
+                        </motion.div>
                         I am <span className="text-primary italic">Atomic</span>
                      </h1>
 
@@ -27,7 +36,10 @@ export default function HeroSection() {
                         hiidoi naa.. hito no kokoro toka nainka?
                      </p>
 
-                     <motion.div initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.8, delay: 0.2}}>
+                     <motion.div 
+                     initial={{opacity: 0, y: 20}} 
+                     animate={{opacity: 1, y: 0}} 
+                     transition={{duration: 0.8, delay: 0.2}}>
                         <Button size='lg' className='group'>
                         This button does not work {" "}
                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"/>
