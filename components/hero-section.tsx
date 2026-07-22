@@ -27,7 +27,8 @@ export default function HeroSection() {
                         animate={{ opacity: [0.2, 0.5, 0, 0.3, 1, 0.2]}}
                         transition={{ repeat: Infinity, duration: 2, ease: easeInOut}}
                         >
-                        <Radiation className='absolute -top-12 -right-1 h-72 w-72 pointer-events-none text-indigo-500/30 blur-[1px]
+                        <Radiation className='absolute md:-top-12 md:-right-1 -top-40
+                        left-1/2 -translate-x-1/2 -translate-y-12 h-72 w-72 pointer-events-none text-indigo-500/30 blur-[1px]
                         rotate-35'/>
                         </motion.div>
                         </motion.div>
@@ -58,7 +59,7 @@ export default function HeroSection() {
                 <div className="relative">
                     <div className="w-80 h-80 bg-linear-to-br from-primary/20 to-secondary/20
                     rounded-full blur-3xl absolute -top-10 -right-10"></div>
-                    <div className="w-96 h-96 bg-linear-to-tl from-secondary/30 to-primary/30
+                    <div className="w-96 h-96 bg-linear-to-tl translate-x-15 from-secondary/30 to-primary/30
                     rounded-2xl transform rotate-6 shadow-2xl overflow-hidden"
                     style={{
                         backgroundImage: "url('/images/profile-bunny.png')",
