@@ -59,10 +59,12 @@ export default function HeroSection() {
                 <div className="relative">
                     <div className="w-80 h-80 bg-linear-to-br from-primary/20 to-secondary/20
                     rounded-full blur-3xl absolute -top-10 -right-10"></div>
+                    <div className='md:hidden bg-linear-to-br from-primary/20 to-secondary/20
+                    rounded-full blur-3xl items-center left-50'></div>
                     <div className="w-96 h-96 bg-linear-to-tl translate-x-15 from-secondary/30 to-primary/30
                     rounded-2xl transform rotate-6 shadow-2xl overflow-hidden"
                     style={{
-                        backgroundImage: "url('/images/profile-bunny.png')",
+                        backgroundImage: "url('/images/naoya-zenin.png')",
                         backgroundRepeat: "repeat",
                         backgroundSize: "64px 64px"
                     }}>

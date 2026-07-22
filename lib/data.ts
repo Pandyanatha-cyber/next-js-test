@@ -53,7 +53,7 @@ export const featuredPosts = [
         id: "6",
         title: "Coffin of The Iron Mountain",
         excerpt: 
-        "Coffin of the Iron Mountain traps the target inside a large volcano hot enough to combust normal sorcerers upon entering. In addition to his pyrokinesis, Jogo can control the earth within the volcano to attack as well.",
+        "Coffin of the Iron Mountain traps the target inside a large volcano hot enough to combust normal sorcerers upon entering.",
         category: "Technique",
         user: "Jogo",
         image: 

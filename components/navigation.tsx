@@ -1,6 +1,7 @@
 import { navItems } from "@/lib/constants";
 import Link from "next/link";
 import ThemeToggle from "./theme-toggle";
+import { List } from "lucide-react";
 
 export default function Navigation() {
     return <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b 
@@ -20,9 +21,16 @@ export default function Navigation() {
                         hover:text-foreground transition-colors duration-200">
                             {item.name}</Link>
                     ))}
-
-                    <ThemeToggle/>
                 </div>
+
+                <div className="flex items-center space-x-5">
+                <ThemeToggle/>
+
+                <div className="md:hidden flex items-center">
+                    <List className="h-6 w-6 text-foreground cursor-pointer"/> 
+                </div>
+                </div>
+
             </div>
         </div>
     </nav>
