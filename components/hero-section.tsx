@@ -7,6 +7,10 @@ import { easeInOut } from 'motion';
 
 export default function HeroSection() {
     return <section className="min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+        
+        <div className="absolute -top-10 -right-10 sm:right-10 w-72 h-72 lg:w-96 lg:h-96 bg-linear-to-br from-primary/20 
+        to-secondary/20 rounded-full blur-3xl pointer-events-none" />
+
         <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/*left content*/}
@@ -59,8 +63,6 @@ export default function HeroSection() {
                 <div className="relative">
                     <div className="w-80 h-80 bg-linear-to-br from-primary/20 to-secondary/20
                     rounded-full blur-3xl absolute -top-10 -right-10"></div>
-                    <div className='md:hidden bg-linear-to-br from-primary/20 to-secondary/20
-                    rounded-full blur-3xl items-center left-50'></div>
                     <div className="w-96 h-96 bg-linear-to-tl translate-x-15 from-secondary/30 to-primary/30
                     rounded-2xl transform rotate-6 shadow-2xl overflow-hidden"
                     style={{
